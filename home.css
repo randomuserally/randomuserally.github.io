@@ -101,3 +101,10 @@ footer {
     margin-top: 100px;
     background-attachment: fixed;
 }
+
+.b .mafriend {
+    width: 98%;
+    height: 1000px;
+    border-radius: 10px;
+    margin-left: 2px;
+}
