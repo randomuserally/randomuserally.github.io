@@ -8,6 +8,8 @@
 }
 
 .h .htype {
+    position: sticky;
+    top: 0;
     margin-left: 50px;
     padding-top: 25px;
     display: block;
@@ -33,11 +35,14 @@
     font-family: Roboto;
     display: flex;
     gap: 5px;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
 }
 
 .b .introb {
-    position: sticky;
+    position: static;
+    top: 0;
     flex-shrink: 0;
     color: black;
     padding-left: 10px;
@@ -55,6 +60,7 @@
 
 .introb .dsv {
     position: sticky;
+    top: 0;
     width: 100%;
     align-items: center;
     float: right;
@@ -64,20 +70,13 @@
     padding-bottom: 10px;
 }
 
-.b .cfdsv::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .b .bcontent {
-    flex-grow: 1;
     outline: auto;
     outline-color: blue;
     background-color: aliceblue;
     border-radius: 10px;
-    width: calc(100% - 400px);
-    max-width: calc(100% - 400px);
+    width: 100%;
+    flex: 75%;
 }
 
 p {
@@ -89,9 +88,48 @@ p {
     padding-left: 10px;
 }
 
+.b .mafriend {
+    padding: auto;
+    width: 98%;
+    height: 1000px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.b .bcontent h2 {
+    padding-left: 10px;
+    font-size: xx-large;
+}
+
+.b .bcontent p {
+    font-size: x-large;
+}
+
+.b .bcontent img {
+    margin-left: 20px;
+    width: 60%;
+    border-radius: 20px;
+    outline: auto;
+    outline-color: blue;
+}
+
+.b .bcontent h4 {
+    font-family: monospace;
+    font-size: large;
+    padding-left: 30px;
+}
+
+footer p {
+    margin-top: 50px;
+}
+
+.h .hbutton .active {
+    background-color: rgba(0, 73, 230, 0.484);
+}
+
 footer {
     font-family: Impact;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     background-color: rgb(196, 223, 246);
     width: auto;
@@ -99,12 +137,55 @@ footer {
     border-radius: 20px;
     margin-right: 2px;
     margin-top: 100px;
-    background-attachment: fixed;
 }
 
-.b .mafriend {
-    width: 98%;
-    height: 1000px;
-    border-radius: 10px;
-    margin-left: 2px;
+.h .hmenu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .h .hmenu {
+        display: inline-block;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .h .hbutton {
+        display: none;
+    }
+
+    .h .hmenu .hdcontent {
+        display: none;
+        position: absolute;
+        background-color: rgb(129, 191, 233);
+        border-radius: 5px;
+    }
+
+    .h .hmenu .hdcontent a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        font-family: Roboto;
+        width: -200px;
+        right: auto;
+    }
+
+    .h .hmenu:hover .hdcontent {
+        display: block;
+        float: none;
+    }
+
+    .b {   
+		flex-direction: column;
+		text-align: center;
+	}
+	.b .cfdsv .dsv{
+		position: static;
+		margin:0 auto;
+	}
+	.b h2{
+		padding-left: 0;
+		text-align: center;
+	}
 }
