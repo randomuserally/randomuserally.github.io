@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatNTBlog</title>
+    <link rel="icon" type="image/x-icon" href="dnt.png">
+</head>
+<script type="text/javascript" charset="utf-8">
+    let a;
+    let time;
+    setInterval(() => {
+        a = new Date();
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time;
+    }, 1000);
+</script>
+<body>
+    <div class="h">
+        <div class="hcontent">
+            <div class="htype">
+                <ul class="hbutton">
+                    <li> <a href="mainweb.html" title="Home"> <img src="house.svg" class="home"></img> </a> </li>
+                    <li> <a href="mainweb.html" title="Menu"> <img src="3dashes.svg" class="menu"></img> </a> </li>
+                    <li> <a href="mainweb.html" title="Settings"> <img src="settings.svg" class="setting"></img> </a> </li>
+                </ul>
+                <a href="mainweb.html" title="Con me nha may"><img src="taoblog.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        <div class="introb">
+            <h2>Hi there! :D</h2>
+                <p>Welcome to my blog! This blog is about introduction, my personalities, my self.
+                I always online 16/24 on my <a href="https://discord.gg/JE8jybR8cA">Discord server</a>. Join if u want to talk with me :D </p>
+                <div class="cfdsv">
+                    <iframe src="https://discord.com/widget?id=1113436198170525808&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="dsv"></iframe>
+                </div>
+            </p>
+        </div>
+        <div class="bcontent">
+            <p>idk what thing to write here but it fine tho</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p style="padding: 25px;"><span id="time"></span></p>
+</footer>
+</html>

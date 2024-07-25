@@ -1,0 +1,103 @@
+.h {
+    background-color: rgba(196, 223, 246, 0.564);
+    width: auto;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 2px;
+    background-attachment: fixed;
+}
+
+.h .htype {
+    margin-left: 50px;
+    padding-top: 25px;
+    display: block;
+    float: none;
+}
+
+.h .hbutton {
+    opacity: 1.0;
+    list-style-type: none;
+    float: right;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: device-width;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    padding-inline: 10px;
+    gap: 10px;
+}
+
+.b {
+    margin-top: 10px;
+    font-family: Roboto;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.b .introb {
+    position: sticky;
+    flex-shrink: 0;
+    color: black;
+    padding-left: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    outline: auto;
+    outline-color: blue;
+    display: auto;
+    width: 400px;
+}
+
+.b h2 {
+    padding-top: 10px;
+}
+
+.introb .dsv {
+    position: sticky;
+    width: 100%;
+    align-items: center;
+    float: right;
+    overflow: auto;
+    display: flex;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.b .cfdsv::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.b .bcontent {
+    flex-grow: 1;
+    outline: auto;
+    outline-color: blue;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: calc(100% - 400px);
+    max-width: calc(100% - 400px);
+}
+
+p {
+    padding-right: 5px;
+}
+
+.b .bcontent p {
+    font-size: large;
+    padding-left: 10px;
+}
+
+footer {
+    font-family: Impact;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(196, 223, 246);
+    width: auto;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 2px;
+    margin-top: 100px;
+    background-attachment: fixed;
+}
