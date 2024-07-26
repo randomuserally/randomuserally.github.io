@@ -51,7 +51,9 @@
     outline: auto;
     outline-color: blue;
     display: auto;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
 }
 
 .b h2 {
@@ -143,6 +145,11 @@ footer {
     display: none;
 }
 
+.h .hbutton #selection img:hover {
+    background-color: rgba(0, 136, 255, 0.137);
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 600px) {
     .h .hmenu {
         display: inline-block;
@@ -180,6 +187,12 @@ footer {
 		flex-direction: column;
 		text-align: center;
 	}
+
+    .b .introb {
+        width: 100%;
+        flex: 100%;
+    }
+
 	.b .cfdsv .dsv{
 		position: static;
 		margin:0 auto;
