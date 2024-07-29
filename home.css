@@ -36,7 +36,7 @@
     display: flex;
     gap: 5px;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: none;
 	width: 100%;
 }
 
@@ -51,7 +51,6 @@
     outline: auto;
     outline-color: blue;
     display: auto;
-    width: 100%;
     max-width: 400px;
     height: fit-content;
 }
@@ -63,11 +62,11 @@
 .introb .dsv {
     position: sticky;
     top: 0;
-    width: 100%;
     align-items: center;
     float: right;
     overflow: auto;
     display: flex;
+    width: 100%;
     padding-right: 5px;
     padding-bottom: 10px;
 }
@@ -101,9 +100,22 @@ p {
 .b .bcontent h2 {
     padding-left: 10px;
     font-size: xx-large;
+    text-decoration: underline;
 }
 
+.b .bcontent h3 {
+
+    padding-left: 15px;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+
 .b .bcontent p {
+    font-size: x-large;
+}
+
+.b .bcontent li {
     font-size: x-large;
 }
 
@@ -185,7 +197,7 @@ footer {
 
     .b {   
 		flex-direction: column;
-		text-align: center;
+		text-align: none;
 	}
 
     .b .introb {
@@ -199,6 +211,6 @@ footer {
 	}
 	.b h2{
 		padding-left: 0;
-		text-align: center;
+		text-align: none;
 	}
 }
