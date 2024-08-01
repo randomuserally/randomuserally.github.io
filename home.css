@@ -201,7 +201,7 @@ footer {
 	}
 
     .b .introb {
-        width: 100%;
+        max-width: 100%;
         flex: 100%;
     }
 
