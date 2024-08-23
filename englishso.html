@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="rve.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DatNTBlog</title>
+    <link rel="icon" type="image/x-icon" href="dnt.png">
+</head>
+<script type="text/javascript" charset="utf-8">
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function getAge() {
+            const age = String(new Date().getFullYear());
+            document.getElementById('age').textContent = age;
+        }
+
+        getAge();
+</script>
+<body>
+    <div class="webpage-look">
+        <div class="webpage-header">
+            <nav>
+                <ul>
+                    <li href="navsection"><a href="revamping.html" title="Main Site">DatNT</a></li>
+                    <li class="clock"><span id="time" onload="showTime()"></span></li>
+                    <li href="navsection"><a href="revamping.html" title="Home">Home</a></li>
+                    <li href="navsection"><a href="blog.html">Blog</a></li>               
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="theessay">
+        <div id="answer">
+            <p>1. Many teenager spend too much time on digital device.</p>
+            <p>2. Parents should strictly limit children's screen time because of the bad effect from digital device.</p>
+            <p>3. My parent keep complaining about my clothes and hairstyles.</p>
+            <p>4. Lan are not allowed to colour hair or wear high heels.</p>
+            <p>5. Lien's grandma do not allow her to wear tight jeans.</p>
+            <p>6. Despite of old age, my grandparent open new ways of thinking.</p>
+            <p>7. Young generation are good at using electronic device.</p>
+            <p>8. Name's parent do not force him to follow in footstep.</p>
+        </div>
+        <div id="para">
+            <h2>The paragraph</h2>
+            <p>
+                In the rapidly world changing. Digital devices is the easiest thing we can see it everyday. It plays an essential part in many ways. Like for teenagers life, job, activities due to their usefulness and ultility. But there're another side. I firmly believe that the children's screen time should be strictly and seriously limited if we want to have a promising future. Why I am so seriously about this problem? Because we all known that electronic devices or screen time is a doubled-edge sword, one side is their benefit, the other side is the disadvantage. <strong>Primarily</strong>, screen time will damage to our health, such as losting eye-sight; having dementia; gaining weight; also lost consciousness to the world outside. Follow some studies from scientists, the digital screen light emit blue light can damage to our eye-sight, also the blue light can keep us from staying awake so that's why we cannot sleep while using a mobile phone at the midnight; contribute to the light blue is their emissions of unreal lights causing our brain cannot process it properly, which is a reason why we all have a little bit headache after screen time for a long time. Moreover, there're many apps on phone can hook us into addiction of online activities, which cause the gap between social and family. Aftermath will lost consciousness and gaining weight. The last but not least, screen time too much will cause the lost focus on our study; learning progress. Imagine we're doing homework and your phone pushed out a notification, you cannot resist it and immediately pick up your phone and having fun all way to the very midnight and to the result is you didn't do your homework. In summary, I believe this is a serious problem and need to take action. I will tell my mom about this problem and wanted to limit my screen time as soon as possible. I don't want to self-revoking my future and don't want to damage my health badly. If I do it, it will excessively enhance my study progress and having a good health. That's why I want to be seriousness on this problem.
+            </p>
+        </div>
+    </div>
+</body>

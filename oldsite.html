@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatNTBlog</title>
+    <link rel="icon" type="image/x-icon" href="dnt.png">
+</head>
+<script type="text/javascript" charset="utf-8">
+    function updateDigitalClock() {
+            const now = moment.tz("Asia/Ho_Chi_Minh");
+            const timeString = now.format('HH:mm:ss');
+            document.getElementById('digitalClock').textContent = timeString;
+        }
+
+        // Cập nhật đồng hồ mỗi giây
+        setInterval(updateDigitalClock, 1000);
+        updateDigitalClock(); // Cập nhật ngay lập tức khi tải trang
+    
+</script>
+<body style="background-color: azure;">
+    <div class="h">
+        <div class="hcontent">
+            <div class="htype">
+                <ul class="hbutton">
+                    <li> <a id="selection" href="index.html" title="Home"> <img src="house.svg" class="home"></img> </a> </li>
+                    <li> <a id="selection" href="index.html" title="Menu"> <img src="3dashes.svg" class="menu"></img> </a> </li>
+                    <li> <a id="selection" href="index.html" title="Settings"> <img src="settings.svg" class="setting"></img> </a> </li>
+                </ul>
+                <div class="hmenu">
+                    <img src="3dot.svg" class="hdrd">
+                    <div class="hdcontent">
+                        <a href="index.html" title="Home"> <img src="house.svg" class="home"></img> </a>
+                        <a href="index.html" title="Menu"> <img src="3dashes.svg" class="menu"></img> </a>
+                        <a href="index.html" title="Settings"> <img src="settings.svg" class="setting"></img> </a>
+                    </div>
+                </div>
+                <a href="mainweb.html" title="Con me nha may"><img src="taoblog.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        <div class="introb">
+            <div>
+            <h2>Hi there! :D</h2>
+                <p>Welcome to my blog! This blog is about introduction, my personalities, my self.
+                As I always idling on my <a href="https://discord.gg/JE8jybR8cA">Discord server</a>. Join if u want to talk with me :D </p>
+                    <p style="font-weight: 900; text-align: center; font-size: xx-large;position: fixed;bottom: 0;right: 1;background-color: rgba(93, 164, 230, 0.538);border-radius: 7px;"><span id="digitalClock"></span></p>
+            </div>
+        </div>
+        <div class="bcontent">
+            <h2> An Introduction about myself</h2>
+            <p>Hello, I am Nguyen Tien Dat and I'm 16 years old <br> And I just started learning HTML and CSS a few weeks ago <br> This is my first blog I've ever created to :</p>
+            <ul>
+                <li> Posting some stuffs about my daily life happening.</li>
+                <li> Archiving things I learnt</li>
+                <li> Flexing dumbass coding skills</li>
+            </ul>
+            <p>And I'm up for trying new things to extend my knowledge :D</p>
+            <hr>
+            <h2> Some infos about me</h2>
+            <h3> National</h3>
+            <p> I'm from Vietnam (currently at the East Southern Vietnam).</p>
+            <h3> Favourite things</h3>
+            <p> Subjects</p>
+            <ul>
+                <li> Math</li>
+                <li> Chemistry</li>
+                <li> Physics</li>
+                <li> Biology</li>
+            </ul>
+            <p> Hobbies</p>
+            <ul>
+                <li> Gaming, Sleeping</li>
+                <li> Scribbling stuffs</li>
+                <li> Coding</li>
+                <li> Photoshopping stuffs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="f">
+        <p>Nothing to show here lol</p>
+    </div>
+</body>
+<footer>
+</footer>
+</html>
