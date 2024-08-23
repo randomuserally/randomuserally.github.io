@@ -137,16 +137,15 @@ ul {
     padding-top: 10px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    width: 1000px;
     gap: 10px;
     position: relative;
+    max-width: 1000px;
+    resize: both;
 }
 
 #startpart {
     display: block;
     justify-content: center;
-    align-items: center;
     outline-color:rgba(255, 255, 255, 0.347);
     outline-style: solid;
     padding: 10px;
@@ -234,7 +233,6 @@ ul {
         display: block;
         justify-content: center;
         align-items: flex-start;
-        width: 100%;
     }
     
     #startpart {
