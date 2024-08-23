@@ -61,7 +61,7 @@ nav li:first-child{
 }
 
 p {
-    padding-top: 5px;
+    padding: 5px;
 }
 
 .theessay {
@@ -104,14 +104,12 @@ p {
         padding-top: 10px;
         display: block;
         justify-content: center;
-        align-items: flex-start;
         width: 100%;
     }
     
     #answer {
         margin: 10px;
         justify-content: center;
-        align-items: center;
         outline-color:rgba(255, 255, 255, 0.347);
         outline-style: solid;
         padding: 10px;
