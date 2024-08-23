@@ -87,6 +87,10 @@ p {
     margin: 10px;
 }
 
+strong {
+    padding-left: 20px;
+}
+
 #para {
     justify-content: flex-start;
     outline-color:rgba(255, 255, 255, 0.347);
