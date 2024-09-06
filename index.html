@@ -23,10 +23,10 @@
         updateClock();
 
         function getAge() {
-            const age = String(new Date().getFullYear());
-            document.getElementById('age').textContent = age;
+            const ageYear = String(new Date().getFullYear());
+            document.getElementById('age').textContent = ageYear;
         }
-
+        
         getAge();
 </script>
 <body>
@@ -36,8 +36,8 @@
                 <ul>
                     <li href="navsection"><a href="index.html" title="Main Site">DatNT</a></li>
                     <li class="clock"><span id="time" onload="showTime()"></span></li>
-                    <li href="navsection"><a href="index.html" title="Home">Home</a></li>
-                    <li href="navsection"><a href="index.html">Blog</a></li>               
+                    <li href="navsection"><a id="hidbtn" href="index.html" title="Home">Home</a></li>
+                    <li href="navsection"><a id="hidbtn" href="index.html">Blog</a></li>               
                 </ul>
             </nav>
         </div>
@@ -84,5 +84,94 @@
         </div>
     </div>
     <p> Tired of new looking site? The old site is <a href="oldsite.html">here</a>.</p>
+    <span id="age" onLoad="getAge()"></span>
+</body>
+</html><!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="rv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DatNT</title>
+    <link rel="icon" type="image/x-icon" href="dnt.png">
+</head>
+<script type="text/javascript" charset="utf-8">
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function getAge() {
+            const ageYear = String(new Date().getFullYear());
+            document.getElementById('age').textContent = ageYear;
+        }
+        
+        getAge();
+</script>
+<body>
+    <div class="webpage-look">
+        <div class="webpage-header">
+            <nav>
+                <ul>
+                    <li href="navsection"><a href="index.html" title="Main Site">DatNT</a></li>
+                    <li class="clock"><span id="time" onload="showTime()"></span></li>
+                    <li href="navsection"><a id="hidbtn" href="index.html" title="Home">Home</a></li>
+                    <li href="navsection"><a id="hidbtn" href="index.html">Blog</a></li>               
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="webpage_body">
+        <h1 style="text-align: center;">HELLO! WELCOME TO MY WEBSITE!</h1>
+        <div class="card-container" style="align-items: center; justify-content: center;">
+            <div class="thecard">
+                <div class="cardimage">
+                    <a href="youtube.com"><image src="wokej.jpg" style="border-radius: 10px;"></image></a>
+                </div>
+                <div class="cardtext">
+                    <p style="padding-left: 20px;"> 🙎‍♂️ Hello! I'm Nguyen Tien Dat 👋
+                        <br>
+                        😀 I'm 16 years old.
+                        <br>
+                        🌏 Live in Vietnam (Binh Duong, Di An city).
+                        <br>
+                        📚 Studying at Di An Highschool.
+                        <br>
+                        <br>
+                        ♥ Love messing up code.
+                        <br>
+                        <br>
+                        About this page, I created for :
+                        <ul>
+                            <li> Posting some stuffs about my daily life happening.</li>
+                            <li> Archiving things I learnt</li>
+                            <li> Flexing dumbass coding skills</li>
+                        </ul>
+                        <br>
+                            And I'm up for trying new things to extend my knowledge
+                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="bottompart">
+        <div id="startpart">
+            <p>This is my <a href="https://discord.gg/JE8jybR8cA">Discord server</a>. Join if u want to talk with me.</p>
+            <iframe src="https://discord.com/widget?id=1113436198170525808&amp;theme=dark" width="340" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" class="dsv"></iframe>
+        </div>
+        <div id="endpart">
+            <h2>Some additional infos (ik it rlly useless)</h2>
+        </div>
+    </div>
+    <p> Tired of new looking site? The old site is <a href="oldsite.html">here</a>.</p>
+    <span id="age" onLoad="getAge()"></span>
 </body>
 </html>
