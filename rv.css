@@ -35,7 +35,6 @@ nav ul{
 
 nav a{
     align-items: center;
-    display: flex;
     gap: 5px;
     padding: 20px 40px;
     background-color: none;
@@ -123,7 +122,7 @@ nav li:first-child{
     margin-left: 20px;
 }
 
-p, h2 {
+p {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -163,19 +162,27 @@ ul {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
+#hidbtn {
+    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    #hidbtn {
+        display: none;
+    }
+    
     .webpage_body {
         padding: 50px;
         align-items: center;
         justify-content: center;
     }
-    
+
     .card-container {
         display: block;
         align-items: center;
         justify-content: center;
     }
-    
+
     .webpage_body .thecard {  
         background: #121212;
         display: block;
@@ -193,7 +200,7 @@ ul {
         border-radius: 10px;
         position: relative;
     }
-    
+
     .webpage_body .thecard::before, .thecard::after {
         content: '';
         position: absolute;
@@ -207,19 +214,19 @@ ul {
         border-radius: 10px;
         animation: 3s spin linear infinite;
     }
-    
+
     .webpage_body .thecard::before{
         filter: blur(5px);
         opacity: 1;
     }
-    
+
     .webpage_body .thecard .cardimage {
         justify-content: center;
         padding: 10px 10px;
         border-radius: 10px; 
         margin-left: 20px;
     }
-    
+
     .webpage_body .thecard .cardtext {
         align-items: none;
         padding-top: 10px;
@@ -228,13 +235,14 @@ ul {
     }
 
     .bottompart {
+        max-width: none;
         margin: auto;
         padding-top: 10px;
         display: block;
         justify-content: center;
         align-items: flex-start;
     }
-    
+
     #startpart {
         display: none;
         justify-content: center;
@@ -244,7 +252,7 @@ ul {
         padding: 10px;
         border-radius: 10px;
     }
-    
+
     #endpart {
         outline-color:rgba(255, 255, 255, 0.347);
         outline-style: solid;
@@ -255,15 +263,3 @@ ul {
         height: auto;
     }
 }
-
-/* .webpage_body h1::before {
-    content: '';
-    background-color: whitesmoke;
-    height: 3px;
-    width: 100%;
-    border-radius: 5px;
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
