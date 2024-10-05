@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="rve.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>English Exercise Answer - DatNT</title>
+    <link rel="icon" type="image/x-icon" href="dnt.png">
+</head>
+<script type="text/javascript" charset="utf-8">
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function getAge() {
+            const age = String(new Date().getFullYear());
+            document.getElementById('age').textContent = age;
+        }
+
+        getAge();
+</script>
+<body>
+    <div class="webpage-look">
+        <div class="webpage-header">
+            <nav>
+                <ul>
+                    <li href="navsection"><a href="index.html" title="Main Site">DatNT</a></li>
+                    <li class="clock"><span id="time" onload="showTime()"></span></li>
+                    <li href="navsection"><a href="index.html" title="Home">Home</a></li>
+                    <li href="navsection"><a href="blog.html">Blog</a></li>               
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="theessay">
+        <div id="para">
+            <h2>Archived Links</h2>
+            <a href="https://drive.google.com/file/d/1jG5qb_U5cZ4gD445DvLBWzp9CQJoz6eP/view?usp=sharing">ôn tập hhlg 11</a>
+            <a href="https://drive.google.com/file/d/1E0R4qMUqRGVNg7oF-5gE47eb5DYkSNGu/view?usp=sharing">ôn tập hhkg 11</a>
+        </div>
+    </div>
+</body>
