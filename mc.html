@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas - Made by DatNT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dddddd;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❄🎄 Merry  Christmast ! 🎄❄</h1>
+        <p>Nhập tên của bạn vào ô ở dưới :</p>
+        <input type="text" id="nameInput" placeholder="Tên của bạn">
+        <button onclick="displayMessage()">Đã nhập !</button>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        function displayMessage() {
+            const name = document.getElementById('nameInput').value;
+            const messageDiv = document.getElementById('message');
+
+            if (name.trim() !== "") {
+                messageDiv.textContent = `Giáng sinh vui vẻ nhé! Chúc bạn ${name} thi tốt!! 🎄✨`;
+            } else {
+                messageDiv.textContent = "Vui lòng nhập tên!";
+            }
+        }
+    </script>
+</body>
+</html>
