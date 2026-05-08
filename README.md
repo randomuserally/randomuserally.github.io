@@ -47,11 +47,11 @@
 ## [uneccessary section] my wife, kind of fictional but yeah
 
 <p align="center">
-  <img src="magss.jpg" />
+  <img src="CnP_08052026_105222.png" />
 </p>
 
 <p align="center">
-  <i>HOLY FUCKING SHIT, ITS SHIROKOOOOOOOO 😭😭 I LOVE YOUUUUUU</i>
+  <i>HOLY FUCKING SHIT, ITS CAR AND WOF 😭😭 I LOVE YOUUUUUU</i>
 </p>
 
 ---
